@@ -6,7 +6,7 @@ export default defineConfig({
   title: 'Exifed',
   description: 'Exifed — photos with your signature.',
   lang: 'zh',
-  icon: '/brand/favicon.ico',
+  icon: '/brand/favicon.svg',
   logo: {
     // Asset names describe the lettering color, not the background theme.
     light: '/brand/logo-dark.svg',

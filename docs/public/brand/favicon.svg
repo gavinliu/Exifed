@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><title>Exifed · Photo Signature</title><path fill="#202321" d="M0 0h1024v1024H0z"/><rect x="184" y="206" width="656" height="612" rx="42" fill="#F5F3ED"/>
-    <rect x="216" y="238" width="592" height="388" rx="16" fill="#202321"/>
-    <circle cx="676" cy="330" r="33" fill="#F5F3ED"/>
-    <path d="M216 566 388 382 548 551 623 478 808 626H216Z" fill="#F5F3ED"/>
-    <rect x="238" y="683" width="84" height="84" rx="17" fill="#D74432"/>
-    <path d="M256 700H304V712H268V719H299V731H268V738H304V750H256Z" fill="#F5F3ED"/>
-    <path d="M372 703H540M598 703H766M372 747H540M598 747H712" stroke="#202321" stroke-width="18" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><title>Exifed · Photo Signature</title><path fill="#202321" d="M0 0h1024v1024H0z"/><path d="M226 206H798A42 42 0 0 1 840 248V776A42 42 0 0 1 798 818H226A42 42 0 0 1 184 776V248A42 42 0 0 1 226 206Z" fill="#F5F3ED"/><path d="M232 238H792A16 16 0 0 1 808 254V626L623 478L548 551L388 382L216 566V254A16 16 0 0 1 232 238Z" fill="#202321"/><path d="M643 330a33 33 0 1 0 66 0a33 33 0 1 0 -66 0Z" fill="#F5F3ED"/><path d="M255 683H305A17 17 0 0 1 322 700V750A17 17 0 0 1 305 767H255A17 17 0 0 1 238 750V700A17 17 0 0 1 255 683Z" fill="#D74432"/><path d="M256 700H304V712H268V719H299V731H268V738H304V750H256Z" fill="#F5F3ED"/><path d="M372 694H540a9 9 0 0 1 0 18H372a9 9 0 0 1 0 -18Z M598 694H766a9 9 0 0 1 0 18H598a9 9 0 0 1 0 -18Z M372 738H540a9 9 0 0 1 0 18H372a9 9 0 0 1 0 -18Z M598 738H712a9 9 0 0 1 0 18H598a9 9 0 0 1 0 -18Z" fill="#202321"/></svg>

@@ -1,14 +1,14 @@
 /* Exifed Photo Signature: vermilion, paper, and ink.
  * Source: exifed-design/brand/品牌规范.md and tokens.json.
- * App-only MD3 defaults do not replace Rspress's native web components.
+ * Web controls use the brand's explicit light/dark primary colors.
  */
 :root {
   --exifed-accent: #d74432;
   --exifed-paper: #f5f3ed;
   --exifed-ink: #202321;
 
-  --rp-c-brand: var(--exifed-accent);
-  --rp-c-brand-dark: #b73526;
+  --rp-c-brand: #bf3827;
+  --rp-c-brand-dark: #bf3827;
   --rp-c-brand-darker: #962b20;
   --rp-c-brand-light: #df6556;
   --rp-c-brand-lighter: #f2b3a9;
@@ -40,7 +40,7 @@
 }
 
 html.dark {
-  --rp-c-brand: #ffb4a8;
+  --rp-c-brand: #f08270;
   --rp-c-brand-dark: #f39485;
   --rp-c-brand-darker: #df6556;
   --rp-c-brand-light: #ffc5bc;
