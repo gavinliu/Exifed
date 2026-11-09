@@ -1,63 +1,94 @@
-/* Example brand color overrides for the custom theme scaffold. */
-/* For more CSS variables, see https://rspress.rs/ui/vars. */
+/* Exifed Photo Signature: vermilion, paper, and ink.
+ * Source: exifed-design/brand/品牌规范.md and tokens.json.
+ * App-only MD3 defaults do not replace Rspress's native web components.
+ */
 :root {
-  --rp-c-brand: #ff5e00;
-  --rp-c-brand-dark: #ff704d;
-  --rp-c-brand-darker: #ff704d;
-  --rp-c-brand-light: #ff7524;
-  --rp-c-brand-lighter: #ff7524;
-  --rp-c-brand-tint: rgba(255, 94, 0, 0.07);
+  --exifed-accent: #d74432;
+  --exifed-paper: #f5f3ed;
+  --exifed-ink: #202321;
 
-  --rp-home-hero-secondary-color: #ff5e00;
-}
+  --rp-c-brand: var(--exifed-accent);
+  --rp-c-brand-dark: #b73526;
+  --rp-c-brand-darker: #962b20;
+  --rp-c-brand-light: #df6556;
+  --rp-c-brand-lighter: #f2b3a9;
+  --rp-c-brand-tint: rgb(215 68 50 / 8%);
+  --rp-c-link: var(--rp-c-brand-dark);
 
-html:not(.dark) {
-  --rp-home-background-bg:
-    radial-gradient(
-      80% 60% at 100% 0%,
-      rgba(255, 117, 36, 0.28) 0%,
-      rgba(255, 255, 255, 0) 70%
-    ),
-    radial-gradient(
-      70% 70% at 50% 0%,
-      rgba(255, 94, 0, 0.18) 0%,
-      rgba(255, 255, 255, 0) 60%
-    ),
-    radial-gradient(
-      90% 70% at 0% 0%,
-      rgba(255, 180, 120, 0.35) 0%,
-      rgba(255, 255, 255, 0) 65%
-    ),
-    radial-gradient(
-      100% 50% at 50% 100%,
-      rgba(255, 117, 36, 0.08) 0%,
-      rgba(255, 255, 255, 0) 50%
-    ),
-    #fff;
+  --rp-c-bg: var(--exifed-paper);
+  --rp-c-bg-alt: var(--exifed-paper);
+  --rp-c-bg-soft: #eeece5;
+  --rp-c-bg-mute: #e5e2d9;
+  --rp-c-text-0: var(--exifed-ink);
+  --rp-c-text-1: var(--exifed-ink);
+  --rp-c-text-2: #686158;
+  --rp-c-text-3: #79736b;
+  --rp-c-divider: rgb(32 35 33 / 24%);
+  --rp-c-divider-light: rgb(32 35 33 / 12%);
+  --rp-c-text-code: var(--rp-c-brand-dark);
+  --rp-c-text-code-bg: var(--rp-c-brand-tint);
+  --rp-code-title-bg: var(--rp-c-bg-soft);
+
+  --rp-home-background-bg: var(--rp-c-bg);
+  --rp-home-feature-bg: var(--rp-c-bg-soft);
+  --rp-home-hero-title-bg: linear-gradient(
+    var(--rp-c-brand),
+    var(--rp-c-brand)
+  );
+  --rp-home-hero-title-color: var(--rp-c-brand);
+  --rp-home-hero-secondary-color: var(--rp-c-brand);
 }
 
 html.dark {
-  --rp-home-background-bg:
-    radial-gradient(
-      80% 60% at 100% 0%,
-      rgba(255, 117, 36, 0.45) 0%,
-      rgba(255, 94, 0, 0.15) 40%,
-      rgba(18, 18, 18, 0) 75%
-    ),
-    radial-gradient(
-      70% 70% at 50% 0%,
-      rgba(255, 94, 0, 0.3) 0%,
-      rgba(18, 18, 18, 0) 60%
-    ),
-    radial-gradient(
-      90% 70% at 0% 0%,
-      rgba(255, 180, 100, 0.25) 0%,
-      rgba(18, 18, 18, 0) 65%
-    ),
-    radial-gradient(
-      100% 50% at 50% 100%,
-      rgba(255, 117, 36, 0.1) 0%,
-      rgba(18, 18, 18, 0) 50%
-    ),
-    #121212;
+  --rp-c-brand: #ffb4a8;
+  --rp-c-brand-dark: #f39485;
+  --rp-c-brand-darker: #df6556;
+  --rp-c-brand-light: #ffc5bc;
+  --rp-c-brand-lighter: #ffdad4;
+  --rp-c-brand-tint: rgb(255 180 168 / 10%);
+  --rp-c-link: var(--rp-c-brand);
+
+  --rp-c-bg: var(--exifed-ink);
+  --rp-c-bg-alt: var(--exifed-ink);
+  --rp-c-bg-soft: #292c29;
+  --rp-c-bg-mute: #333632;
+  --rp-c-text-0: var(--exifed-paper);
+  --rp-c-text-1: var(--exifed-paper);
+  --rp-c-text-2: #c6c0b6;
+  --rp-c-text-3: #aaa49b;
+  --rp-c-divider: rgb(245 243 237 / 24%);
+  --rp-c-divider-light: rgb(245 243 237 / 12%);
+  --rp-c-text-code: var(--rp-c-brand);
+}
+
+/* Keep the primary action's white label readable in both themes. */
+.rp-button--brand {
+  background: var(--exifed-accent);
+}
+
+.rp-home-hero__title-brand {
+  width: auto;
+}
+
+/* The horizontal brand lockup needs more height than Rspress's 1.6rem icon. */
+.rp-nav__title .rspress-logo {
+  height: 48px;
+  width: auto;
+}
+
+.rp-home-hero__image-img {
+  width: min(320px, 100%);
+  height: auto;
+  border-radius: 22%;
+}
+
+@media (max-width: 767px) {
+  .rp-nav__title .rspress-logo {
+    height: 40px;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--rp-c-brand);
+  outline-offset: 4px;
 }
